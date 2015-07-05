@@ -1,5 +1,5 @@
 "set default gui font
 if has('gui_running')
-  set guifont=Source_Code_Pro:h17
+  set guifont=Source\ Code\ Pro:h17
 endif
 
