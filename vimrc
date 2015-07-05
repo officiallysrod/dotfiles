@@ -12,6 +12,13 @@ set nowritebackup         " don't use vim to backup
 set nobackup              " don't use vim to backup
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call plug#begin('~/.vim/plugged')
+Plug 'kien/ctrlp.vim'
+call plug#end()
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key mappings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " map the leader key to space bar
@@ -32,6 +39,9 @@ nnoremap <leader>k <C-w>k
 
 " shortcuts for navigating tabs
 nnoremap <leader>t gt
+
+" open ctrlp w/ <leader>p
+map <leader>p :CtrlP<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shell and Text Formatting
@@ -65,3 +75,4 @@ set hlsearch   " highlight matches
 set incsearch  " incremental searching
 set ignorecase " case-insensitive searching...
 set smartcase  " ...unless they contain at least one capital letter
+
