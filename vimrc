@@ -15,7 +15,19 @@ set nobackup              " don't use vim to backup
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
-Plug 'kien/ctrlp.vim'
+
+Plug 'kien/ctrlp.vim'         " fuzzy file finding
+Plug 'tpope/vim-commentary'   " easy file commenting
+
+" auto-completion
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
+let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
+
+" ultisnips plugin and trigger configuration
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+let g:UltiSnipsExpandTrigger = "<tab>"
+
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
