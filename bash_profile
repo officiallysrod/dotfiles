@@ -1,6 +1,9 @@
 # Load in the git branch prompt script
 source ~/git-prompt.sh
 
+# Load .bashrc for aliases
+source ~/.bashrc
+
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
 
 ### Added by the Heroku Toolbelt
