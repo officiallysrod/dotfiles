@@ -18,6 +18,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'kien/ctrlp.vim'         " fuzzy file finding
 Plug 'tpope/vim-commentary'   " easy file commenting
+Plug 'airblade/vim-gitgutter' " show git status in the gutter
 
 " auto-completion
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
