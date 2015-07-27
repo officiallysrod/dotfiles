@@ -10,6 +10,7 @@ set encoding=utf-8        " set character encoding
 set autowrite             " automatically :w before running commands
 set nowritebackup         " don't use vim to backup
 set nobackup              " don't use vim to backup
+set updatetime=750
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
