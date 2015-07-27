@@ -21,6 +21,13 @@ Plug 'kien/ctrlp.vim'         " fuzzy file finding
 Plug 'tpope/vim-commentary'   " easy file commenting
 Plug 'airblade/vim-gitgutter' " show git status in the gutter
 
+" status and tabline plugin
+Plug 'bling/vim-airline'
+let g:airline#extensions#bufferline#enabled = 1
+let g:airline_theme='powerlineish'
+let g:airline_section_x=''
+let g:airline_section_y=''
+
 " auto-completion
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
 let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
