@@ -68,7 +68,7 @@ map <leader>p :CtrlP<CR>
 " Shell and Text Formatting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256      " enables 256 colors in Vim
-color Dracula     " set color theme
+color dracula     " set color theme
 set number        " displays line numbers
 set ruler         " displays column number
 syntax on         " turns syntax highlighting on
