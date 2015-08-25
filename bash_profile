@@ -24,3 +24,5 @@ export BUNDLER_EDITOR="subl"
 
 #use macvim for console
 alias vim='/usr/local/bin/gvim -v'
+
+test -e ${HOME}/.iterm2_shell_integration.bash && source ${HOME}/.iterm2_shell_integration.bash
