@@ -10,21 +10,24 @@ set encoding=utf-8        " set character encoding
 set autowrite             " automatically :w before running commands
 set nowritebackup         " don't use vim to backup
 set nobackup              " don't use vim to backup
-set updatetime=750
+set updatetime=750        " to speed up git gutter plugin
+set mouse=a               " mouse selection won't include line numbers now
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 
-Plug 'kien/ctrlp.vim'         " fuzzy file finding
-Plug 'tpope/vim-commentary'   " easy file commenting
-Plug 'airblade/vim-gitgutter' " show git status in the gutter
+Plug 'kien/ctrlp.vim'            " fuzzy file finding
+Plug 'tpope/vim-commentary'      " easy file commenting
+Plug 'airblade/vim-gitgutter'    " show git status in the gutter
+Plug 'henrik/vim-indexed-search' " show number of matches in search results
 
 " status and tabline plugin
 Plug 'bling/vim-airline'
 let g:airline#extensions#bufferline#enabled = 1
-let g:airline_theme='powerlineish'
+let g:airline_powerline_fonts = 1
+let g:airline_theme='silver'
 let g:airline_section_x=''
 let g:airline_section_y=''
 
