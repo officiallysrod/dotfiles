@@ -4,6 +4,7 @@
 set nocompatible          " don't maintain compatibility with Vi
 filetype plugin indent on " load file type plugins + indentation
 set showcmd               " show partial commands in the last line of the screen
+set noshowmode
 set hidden                " allow buffer change w/o saving
 set encoding=utf-8        " set character encoding
 :autocmd FocusLost * :wa  " save file on focus lost
@@ -22,6 +23,7 @@ Plug 'kien/ctrlp.vim'            " fuzzy file finding
 Plug 'tpope/vim-commentary'      " easy file commenting
 Plug 'airblade/vim-gitgutter'    " show git status in the gutter
 Plug 'henrik/vim-indexed-search' " show number of matches in search results
+Plug 'tpope/vim-fugitive'        " for airline to show git branch
 
 " status and tabline plugin
 Plug 'bling/vim-airline'
