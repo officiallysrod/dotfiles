@@ -13,6 +13,7 @@ set nowritebackup         " don't use vim to backup
 set nobackup              " don't use vim to backup
 set updatetime=750        " to speed up git gutter plugin
 set mouse=a               " mouse selection won't include line numbers now
+set tags=./tags;          " tell Vim where to find tags file
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
