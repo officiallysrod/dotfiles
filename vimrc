@@ -27,7 +27,9 @@ Plug 'tpope/vim-fugitive'        " for airline to show git branch
 
 " status and tabline plugin
 Plug 'bling/vim-airline'
-let g:airline#extensions#bufferline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_buffers = 1
+let g:airline#extensions#tabline#show_tabs = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme='silver'
 let g:airline_section_x=''
