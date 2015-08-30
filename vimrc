@@ -20,11 +20,15 @@ set tags=./tags;          " tell Vim where to find tags file
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 
-Plug 'kien/ctrlp.vim'            " fuzzy file finding
-Plug 'tpope/vim-commentary'      " easy file commenting
-Plug 'airblade/vim-gitgutter'    " show git status in the gutter
-Plug 'henrik/vim-indexed-search' " show number of matches in search results
-Plug 'tpope/vim-fugitive'        " for airline to show git branch
+Plug 'kien/ctrlp.vim'                " fuzzy file finding
+Plug 'tpope/vim-commentary'          " easy file commenting
+Plug 'airblade/vim-gitgutter'        " show git status in the gutter
+Plug 'henrik/vim-indexed-search'     " show number of matches in search results
+Plug 'tpope/vim-fugitive'            " for airline to show git branch
+
+" for easier buffer management
+Plug 'jeetsukumaran/vim-buffergator'
+let g:buffergator_autoexpand_on_split = 0
 
 " status and tabline plugin
 Plug 'bling/vim-airline'
