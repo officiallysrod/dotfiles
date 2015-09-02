@@ -21,11 +21,19 @@ set timeoutlen=250
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 
-Plug 'kien/ctrlp.vim'                " fuzzy file finding
-Plug 'tpope/vim-commentary'          " easy file commenting
-Plug 'airblade/vim-gitgutter'        " show git status in the gutter
-Plug 'henrik/vim-indexed-search'     " show number of matches in search results
-Plug 'tpope/vim-fugitive'            " for airline to show git branch
+Plug 'kien/ctrlp.vim'            " fuzzy file finding
+Plug 'tpope/vim-commentary'      " easy file commenting
+Plug 'airblade/vim-gitgutter'    " show git status in the gutter
+Plug 'henrik/vim-indexed-search' " show number of matches in search results
+Plug 'tpope/vim-fugitive'        " for airline to show git branch
+
+" display leading white space and indentation
+Plug 'Yggdroot/indentLine'
+" let g:indentLine_enabled = 1
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '·'
+" g:indentLine_noConcealCursor
+" let g:indentLine_char = '┊'
 
 " for easier buffer management
 Plug 'jeetsukumaran/vim-buffergator'
@@ -40,6 +48,11 @@ let g:airline#extensions#hunks#enabled = 0 " don't show git details
 let g:airline_powerline_fonts = 1
 let g:airline_theme='silver'
 
+" Supertab - enhanced <tab> behavior based on context
+Plug 'ervandew/supertab'
+let g:SuperTabDefaultCompletionType = '<C-n>'
+let g:SuperTabCrMapping = 0
+
 " auto-completion
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
 let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
@@ -47,7 +60,9 @@ let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
 
 " ultisnips plugin and trigger configuration
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsExpandTrigger       = "<tab>"
+let g:UltiSnipsJumpForwardTrigger  = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 call plug#end()
 
@@ -69,6 +84,11 @@ nnoremap <leader>h <C-w>h
 nnoremap <leader>l <C-w>l
 nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
 
 " shortcuts for navigating tabs
 nnoremap <leader>t gt
