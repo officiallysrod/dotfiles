@@ -21,13 +21,25 @@ set timeoutlen=250
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 
-Plug 'kien/ctrlp.vim'                   " fuzzy file finding
 Plug 'tpope/vim-commentary'             " easy file commenting
 Plug 'airblade/vim-gitgutter'           " show git status in the gutter
 Plug 'henrik/vim-indexed-search'        " show number of matches in search results
 Plug 'tpope/vim-fugitive'               " for airline to show git branch
 Plug 'jiangmiao/auto-pairs'             " insert/del brackets, parens, quotes in pairs
 Plug 'altercation/vim-colors-solarized' " colorscheme
+
+" fuzzy file finding
+Plug 'kien/ctrlp.vim'
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
 
 " display leading white space and indentation
 Plug 'Yggdroot/indentLine'
@@ -99,6 +111,9 @@ nnoremap <leader>t gt
 " open ctrlp w/ <leader>p
 map <leader>p :CtrlP<CR>
 
+" sublime-style commenting
+map <D-/> gcc
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shell and Text Formatting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -111,7 +126,7 @@ set number        " displays line numbers
 set ruler         " displays column number
 syntax on         " turns syntax highlighting on
 set cmdheight=2   " set command window height to 2 lines
-set cursorline    " highlight the current line
+" set cursorline    " highlight the current line
 set guioptions-=e " use Vim tabs instead of MacVim tabs
 set expandtab     " convert tabs to spaces
 set tabstop=2     " set tab space to 2
