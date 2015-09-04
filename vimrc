@@ -9,6 +9,7 @@ set hidden                " allow buffer change w/o saving
 set encoding=utf-8        " set character encoding
 :autocmd FocusLost * :wa  " save file on focus lost
 set autowrite             " automatically :w before running commands
+set autoread              " automatically reread changed files w/o asking
 set nowritebackup         " don't use vim to backup
 set nobackup              " don't use vim to backup
 set updatetime=750        " to speed up git gutter plugin
@@ -108,7 +109,7 @@ nnoremap <C-k> <C-w>k
 " shortcuts for navigating tabs
 nnoremap <leader>t gt
 
-" open ctrlp w/ <leader>p
+" open ctrlp with...
 map <leader>p :CtrlP<CR>
 
 " sublime-style commenting
