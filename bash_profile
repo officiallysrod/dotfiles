@@ -19,7 +19,7 @@ COLOR_BOLD="\[\e[1m\]"
 COLOR_DEFAULT="\[\e[0m\]"
 # PS1="$COLOR_BOLD\w$COLOR_DEFAULT\$(__git_ps1)$COLOR_BOLD $ $COLOR_DEFAULT"
 # Custom bash prompt via kirsle.net/wizards/ps1.html
-export PS1="\[$(tput setaf 6)\]\w\[$(tput setaf 5)\]$(__git_ps1)\[$(tput setaf 6)\] $ \[$(tput sgr0)\]"
+PS1="\[$(tput setaf 6)\]\w\[$(tput setaf 5)\]\$(__git_ps1)\[$(tput setaf 6)\] $ \[$(tput sgr0)\]"
 
 #default bundler editor
 export BUNDLER_EDITOR="subl"
