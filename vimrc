@@ -21,19 +21,21 @@ set timeoutlen=250
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 
-Plug 'kien/ctrlp.vim'            " fuzzy file finding
-Plug 'tpope/vim-commentary'      " easy file commenting
-Plug 'airblade/vim-gitgutter'    " show git status in the gutter
-Plug 'henrik/vim-indexed-search' " show number of matches in search results
-Plug 'tpope/vim-fugitive'        " for airline to show git branch
+Plug 'kien/ctrlp.vim'                   " fuzzy file finding
+Plug 'tpope/vim-commentary'             " easy file commenting
+Plug 'airblade/vim-gitgutter'           " show git status in the gutter
+Plug 'henrik/vim-indexed-search'        " show number of matches in search results
+Plug 'tpope/vim-fugitive'               " for airline to show git branch
+Plug 'jiangmiao/auto-pairs'             " insert/del brackets, parens, quotes in pairs
+Plug 'altercation/vim-colors-solarized' " colorscheme
 
 " display leading white space and indentation
 Plug 'Yggdroot/indentLine'
-" let g:indentLine_enabled = 1
+let g:indentLine_enabled = 0
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '·'
-" g:indentLine_noConcealCursor
-" let g:indentLine_char = '┊'
+let g:indentLine_char = '┊'
+let g:indentLine_noConcealCursor = 0
 
 " for easier buffer management
 Plug 'jeetsukumaran/vim-buffergator'
@@ -46,7 +48,8 @@ let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#show_tabs = 1
 let g:airline#extensions#hunks#enabled = 0 " don't show git details
 let g:airline_powerline_fonts = 1
-let g:airline_theme='silver'
+let g:airline_theme='solarized'
+" let g:airline_theme='silver'
 
 " Supertab - enhanced <tab> behavior based on context
 Plug 'ervandew/supertab'
@@ -100,7 +103,10 @@ map <leader>p :CtrlP<CR>
 " Shell and Text Formatting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256      " enables 256 colors in Vim
-color dracula     " set color theme
+" color dracula     " set color theme
+color solarized
+set background=dark
+let g:solarized_contrast = "high"
 set number        " displays line numbers
 set ruler         " displays column number
 syntax on         " turns syntax highlighting on
