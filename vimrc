@@ -119,22 +119,23 @@ map <D-/> gcc
 " Shell and Text Formatting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256      " enables 256 colors in Vim
-" color dracula     " set color theme
 color solarized
 set background=dark
 let g:solarized_contrast = "high"
-set number        " displays line numbers
-set ruler         " displays column number
-syntax on         " turns syntax highlighting on
-set cmdheight=2   " set command window height to 2 lines
+
+set number          " displays line numbers
+set ruler           " displays column number
+set colorcolumn=100 " displays a vertical line
+syntax on           " turns syntax highlighting on
+set cmdheight=2     " set command window height to 2 lines
 " set cursorline    " highlight the current line
-set guioptions-=e " use Vim tabs instead of MacVim tabs
-set expandtab     " convert tabs to spaces
-set tabstop=2     " set tab space to 2
-set shiftwidth=2  " set number of space characters used for indentation
-set laststatus=2  " always display the status line
-set splitbelow    " open new split panes below current pane
-set splitright    " open new vsplit panes to right of current pane
+set guioptions-=e   " use Vim tabs instead of MacVim tabs
+set expandtab       " convert tabs to spaces
+set tabstop=2       " set tab space to 2
+set shiftwidth=2    " set number of space characters used for indentation
+set laststatus=2    " always display the status line
+set splitbelow      " open new split panes below current pane
+set splitright      " open new vsplit panes to right of current pane
 
 " display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
