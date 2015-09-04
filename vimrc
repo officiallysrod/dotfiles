@@ -30,6 +30,7 @@ Plug 'jiangmiao/auto-pairs'             " insert/del brackets, parens, quotes in
 Plug 'altercation/vim-colors-solarized' " colorscheme
 
 " fuzzy file finding
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'kien/ctrlp.vim'
 if executable('ag')
   " Use ag over grep
@@ -43,6 +44,7 @@ if executable('ag')
 endif
 
 " display leading white space and indentation
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'Yggdroot/indentLine'
 let g:indentLine_enabled = 0
 let g:indentLine_leadingSpaceEnabled = 1
@@ -51,30 +53,35 @@ let g:indentLine_char = '┊'
 let g:indentLine_noConcealCursor = 0
 
 " for easier buffer management
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'jeetsukumaran/vim-buffergator'
 let g:buffergator_autoexpand_on_split = 0
 
 " status and tabline plugin
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'bling/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#show_tabs = 1
-let g:airline#extensions#hunks#enabled = 0 " don't show git details
+" let g:airline#extensions#hunks#enabled = 0 " don't show git details
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
 " let g:airline_theme='silver'
 
 " Supertab - enhanced <tab> behavior based on context
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'ervandew/supertab'
 let g:SuperTabDefaultCompletionType = '<C-n>'
 let g:SuperTabCrMapping = 0
 
 " auto-completion
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
 let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
 
 " ultisnips plugin and trigger configuration
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 let g:UltiSnipsExpandTrigger       = "<tab>"
 let g:UltiSnipsJumpForwardTrigger  = "<tab>"
