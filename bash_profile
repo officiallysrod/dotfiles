@@ -1,5 +1,6 @@
 # Load in the git branch prompt script
 source ~/git-prompt.sh
+source ~/git-completion.bash
 
 # Load .bashrc for aliases
 source ~/.bashrc
