@@ -28,6 +28,8 @@ Plug 'henrik/vim-indexed-search'        " show number of matches in search resul
 Plug 'tpope/vim-fugitive'               " for airline to show git branch
 Plug 'jiangmiao/auto-pairs'             " insert/del brackets, parens, quotes in pairs
 Plug 'altercation/vim-colors-solarized' " colorscheme
+Plug 'tpope/vim-surround'               " easily change, delete, or add surroundings
+Plug 'scrooloose/nerdtree'              " file tree explorer
 
 " fuzzy file finding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -145,7 +147,7 @@ set splitbelow      " open new split panes below current pane
 set splitright      " open new vsplit panes to right of current pane
 
 " display extra whitespace
-set list listchars=tab:»·,trail:·,nbsp:·
+set list listchars=tab:»·,trail:·,nbsp:·
 
 " when opening a new line and no filetype-specific indenting is enabled, keep
 " the same indent as the line you're currently on. Useful for READMEs, etc.
