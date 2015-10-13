@@ -30,6 +30,7 @@ Plug 'jiangmiao/auto-pairs'             " insert/del brackets, parens, quotes in
 Plug 'altercation/vim-colors-solarized' " colorscheme
 Plug 'tpope/vim-surround'               " easily change, delete, or add surroundings
 Plug 'scrooloose/nerdtree'              " file tree explorer
+Plug 'tpope/vim-rails'                  " power tools for Rails
 
 " fuzzy file finding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
