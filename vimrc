@@ -31,6 +31,7 @@ Plug 'altercation/vim-colors-solarized' " colorscheme
 Plug 'tpope/vim-surround'               " easily change, delete, or add surroundings
 Plug 'scrooloose/nerdtree'              " file tree explorer
 Plug 'tpope/vim-rails'                  " power tools for Rails
+Plug 'p0deje/vim-ruby-interpolation'    " automatically add {} when you type # inside a ruby string
 
 " fuzzy file finding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
