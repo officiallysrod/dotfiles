@@ -32,6 +32,7 @@ Plug 'tpope/vim-surround'               " easily change, delete, or add surround
 Plug 'scrooloose/nerdtree'              " file tree explorer
 Plug 'tpope/vim-rails'                  " power tools for Rails
 Plug 'p0deje/vim-ruby-interpolation'    " automatically add {} when you type # inside a ruby string
+Plug 'skwp/greplace.vim'                " find and replace across files
 
 " fuzzy file finding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
