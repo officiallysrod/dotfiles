@@ -70,8 +70,7 @@ let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#show_tabs = 1
 " let g:airline#extensions#hunks#enabled = 0 " don't show git details
 let g:airline_powerline_fonts = 1
-let g:airline_theme='solarized'
-" let g:airline_theme='silver'
+let g:airline_theme='silver'
 
 " Supertab - enhanced <tab> behavior based on context
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -131,7 +130,7 @@ map <D-/> gcc
 " Shell and Text Formatting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256      " enables 256 colors in Vim
-color solarized
+color dracula
 set background=dark
 let g:solarized_contrast = "high"
 
