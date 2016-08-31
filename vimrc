@@ -130,7 +130,7 @@ map <D-/> gcc
 " Shell and Text Formatting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256      " enables 256 colors in Vim
-color dracula
+color solarized
 set background=dark
 let g:solarized_contrast = "high"
 
