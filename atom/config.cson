@@ -1,0 +1,130 @@
+"*":
+  "atom-alignment": {}
+  "atom-ctags":
+    autoBuildTagsWhenActive: true
+    buildTimeout: 60000
+    cmdArgs: "--exclude=acquisition/imports --exclude=acquisition/scrapes --exclude=aux --exclude=config --exclude=data --exclude=lib/archive --exclude=lib/data --exclude=lib/importers --exclude=lib/scrapers --exclude=log4r"
+  "autocomplete-plus":
+    useAlternateScoring: false
+    useCoreMovementCommands: false
+  autosave:
+    enabled: true
+  core:
+    automaticallyUpdate: false
+    disabledPackages: [
+      "symbols-view"
+      "metrics"
+      "linter-rubocop"
+      "tabs"
+      "atom-ctags"
+    ]
+    excludeVcsIgnoredPaths: false
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    backUpBeforeSaving: true
+    fontFamily: "Input Mono Narrow"
+    fontSize: 12
+    invisibles: {}
+    preferredLineLength: 100
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+  "exception-reporting":
+    userId: "e3c5e6a6-bdfd-102a-a251-e940e627ceed"
+  "fuzzy-finder": {}
+  "git-diff":
+    showIconsInEditorGutter: true
+  "highlight-line":
+    enableSelectionBorder: true
+  linter:
+    errorPanelHeight: 71
+    lintOnFly: false
+  "linter-rubocop": {}
+  "markdown-preview":
+    breakOnSingleNewline: true
+    useGitHubStyle: true
+  nvatom:
+    directory: "/Users/shawnrodriguez/Desktop/example"
+  "one-dark-ui": {}
+  pigments:
+    supportedFiletypes: [
+      "css"
+      "less"
+      "sass"
+      "scss"
+      "html"
+    ]
+  react:
+    enabledForAllJavascriptFiles: true
+  rspec: {}
+  "ruby-test":
+    specFramework: "rspec"
+    testFramework: "minitest"
+  "status-bar": {}
+  tabs:
+    enableVcsColoring: true
+  "tree-view":
+    alwaysOpenExisting: true
+    hideIgnoredNames: true
+  "tree-view-open-files": {}
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
+    useSmartcaseForSearch: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+".basic.html.text":
+  editor:
+    preferredLineLength: 100
+".coffee.jsx.source":
+  editor:
+    preferredLineLength: 100
+    showIndentGuide: true
+".diff.source":
+  editor:
+    preferredLineLength: 100
+    showIndentGuide: false
+".erb.html.text":
+  editor:
+    preferredLineLength: 100
+".evnd.gfm.html.inline.markdown.mathjax.source.text":
+  editor:
+    preferredLineLength: 100
+".evnd.html.inline":
+  editor:
+    preferredLineLength: 100
+".gfm.nvatom.source":
+  editor:
+    preferredLineLength: 100
+".html.ruby.text":
+  editor:
+    preferredLineLength: 100
+".js.jsx.source":
+  editor:
+    preferredLineLength: 100
+    showIndentGuide: true
+".js.rails.source source.jquery.js":
+  editor:
+    preferredLineLength: 100
+".rails.rjs.ruby.source":
+  editor:
+    preferredLineLength: 100
+".rails.ruby.source":
+  editor:
+    preferredLineLength: 100
+".ruby.source":
+  editor:
+    preferredLineLength: 100
+".ruby.source.sql":
+  editor:
+    preferredLineLength: 100
+".source.yaml":
+  editor:
+    autoIndentOnPaste: false
+    preferredLineLength: 100
+"linter-rubocop":
+  executablePath: "/Users/shawnrodriguez/.rbenv/shims/rubocop"
