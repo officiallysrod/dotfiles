@@ -33,6 +33,7 @@ Plug 'scrooloose/nerdtree'              " file tree explorer
 Plug 'tpope/vim-rails'                  " power tools for Rails
 Plug 'p0deje/vim-ruby-interpolation'    " automatically add {} when you type # inside a ruby string
 Plug 'skwp/greplace.vim'                " find and replace across files
+Plug 'janko-m/vim-test'                 " test runner
 
 " fuzzy file finding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -125,6 +126,10 @@ map <leader>p :CtrlP<CR>
 
 " sublime-style commenting
 map <D-/> gcc
+
+" test runner shortcuts
+nmap <silent> <leader>t :TestFile<CR>
+nmap <silent> <leader>l :TestLast<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shell and Text Formatting
