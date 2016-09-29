@@ -26,12 +26,13 @@
   editor:
     backUpBeforeSaving: true
     fontFamily: "Input Mono Narrow"
-    fontSize: 12
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
+  "ex-mode":
+    splitright: true
   "exception-reporting":
     userId: "e3c5e6a6-bdfd-102a-a251-e940e627ceed"
   "fuzzy-finder": {}
