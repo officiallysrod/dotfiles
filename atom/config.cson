@@ -10,13 +10,11 @@
   autosave:
     enabled: true
   core:
-    automaticallyUpdate: false
     disabledPackages: [
       "symbols-view"
       "metrics"
       "linter-rubocop"
       "tabs"
-      "atom-ctags"
     ]
     excludeVcsIgnoredPaths: false
     themes: [
