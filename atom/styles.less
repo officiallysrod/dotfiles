@@ -27,7 +27,11 @@ atom-text-editor::shadow .cursor {
 atom-pane.active {
   border: 3px solid #FAFAFA;
 }
-
+// atom-text-editor::shadow .linter-highlight.warning:not(.line-number), .linter-highlight.warning:not(.line-number) {
+atom-text-editor.editor .linter-highlight.syntax--warning:not(.line-number), .linter-highlight.warning:not(.line-number) {
+  background-color: yellow;
+  color: black;
+}
 // atom-pane:not(.active){
 //   opacity: 0.9;
 // }

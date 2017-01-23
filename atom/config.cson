@@ -3,7 +3,7 @@
   "atom-ctags":
     autoBuildTagsWhenActive: true
     buildTimeout: 60000
-    cmdArgs: "--exclude=acquisition/imports --exclude=acquisition/scrapes --exclude=aux --exclude=config --exclude=data --exclude=lib/archive --exclude=lib/data --exclude=lib/importers --exclude=lib/scrapers --exclude=log4r"
+    cmdArgs: "--exclude=aux --exclude=config --exclude=data  --exclude=log4r --exclude=node_modules"
   "autocomplete-plus":
     useAlternateScoring: false
     useCoreMovementCommands: false
@@ -13,17 +13,21 @@
     disabledPackages: [
       "symbols-view"
       "metrics"
-      "linter-rubocop"
-      "tabs"
+      "vim-mode"
+      "vim-surround"
+      "ex-mode"
     ]
-    excludeVcsIgnoredPaths: false
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "solarized-dark-syntax"
     ]
+    useCustomTitleBar: true
   editor:
+    autoIndent: true
     backUpBeforeSaving: true
     fontFamily: "Input Mono Narrow"
+    fontSize: 11
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
@@ -40,11 +44,17 @@
     enableSelectionBorder: true
   linter:
     errorPanelHeight: 71
-    lintOnFly: false
-  "linter-rubocop": {}
+    lintOnFlyInterval: 750
+    showErrorPanel: false
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
+  "linter-sass-lint":
+    configFile: ".scss-lint.yml"
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true
+  "mocha-test-runner":
+    env: "NODE_ENV=test"
   nvatom:
     directory: "/Users/shawnrodriguez/Desktop/example"
   "one-dark-ui": {}
@@ -60,6 +70,9 @@
     enabledForAllJavascriptFiles: true
   rspec: {}
   "ruby-test":
+    rspecAllCommand: "bin/rspec --tty spec"
+    rspecFileCommand: "bin/rspec --tty {relative_path}"
+    rspecSingleCommand: "bin/rspec --tty {relative_path}:{line_number}"
     specFramework: "rspec"
     testFramework: "minitest"
   "status-bar": {}
@@ -72,6 +85,19 @@
   "vim-mode":
     useClipboardAsDefaultRegister: true
     useSmartcaseForSearch: true
+  "vim-mode-plus":
+    automaticallyEscapeInsertModeOnActivePaneItemChange: true
+    clearHighlightSearchOnResetNormalMode: true
+    clearMultipleCursorsOnEscapeInsertMode: true
+    hideStatusBarOnMaximizePane: false
+    highlightSearch: true
+    ignoreCaseForSearch: true
+    showCursorInVisualMode: false
+    showHoverSearchCounter: true
+    smoothScrollOnFullScrollMotion: true
+    statusBarModeStringStyle: "long"
+    stayOnTransformString: true
+    useClipboardAsDefaultRegister: true
   welcome:
     showOnStartup: false
   whitespace:

@@ -27,20 +27,38 @@
 'atom-text-editor':
   'ctrl-k': 'unset!'
 
-'atom-text-editor.vim-mode:not(.insert-mode)':
-  'shift-j': 'unset!'
-  'shift-k': 'unset!'
-  'shift-j': 'pane:show-previous-item'
-  'shift-k': 'pane:show-next-item'
+###############################################################################
+# Vim-related keybindings
+###############################################################################
+'atom-text-editor.vim-mode-plus.normal-mode':
   'space b': 'fuzzy-finder:toggle-buffer-finder'
+
+  # surround-mode key bindings
+  'y s': 'vim-mode-plus:surround'
+  'd s': 'vim-mode-plus:delete-surround-any-pair'
+  'd S': 'vim-mode-plus:delete-surround'
+  'c s': 'vim-mode-plus:change-surround'
+
+  # ctags
+  'ctrl-]': 'atom-ctags:go-to-declaration'
+  'ctrl-[': 'atom-ctags:return-from-declaration'
+
+'atom-text-editor.vim-mode-plus.operator-pending-mode.surround-pending':
+  # surround-mode key bindings
+  's': 'vim-mode-plus:inner-current-line'
+
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  # navigate tabs
+  'shift-J': 'pane:show-previous-item'
+  'shift-K': 'pane:show-next-item'
+
+  # test runner
   'space a': 'ruby-test:test-all'
   'space t': 'ruby-test:test-file'
   'space l': 'ruby-test:test-previous'
+  'space s': 'ruby-test:test-single'
   'space x': 'ruby-test:toggle'
-
-'atom-text-editor.vim-mode.normal-mode':
-  'ctrl-]': 'atom-ctags:go-to-declaration'
-  'ctrl-[': 'atom-ctags:return-from-declaration'
+###############################################################################
 
 'body':
   'ctrl-h': 'window:focus-pane-on-left'
