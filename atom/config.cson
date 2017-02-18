@@ -3,7 +3,7 @@
   "atom-ctags":
     autoBuildTagsWhenActive: true
     buildTimeout: 60000
-    cmdArgs: "--exclude=aux --exclude=config --exclude=data  --exclude=log4r --exclude=node_modules"
+    cmdArgs: "--exclude=aux --exclude=config --exclude=data  --exclude=log4r --exclude=node_modules --exclude=.git"
   "autocomplete-plus":
     useAlternateScoring: false
     useCoreMovementCommands: false
@@ -11,12 +11,13 @@
     enabled: true
   core:
     disabledPackages: [
-      "symbols-view"
       "metrics"
       "vim-mode"
       "vim-surround"
       "ex-mode"
+      "symbols-view"
     ]
+    packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -27,7 +28,7 @@
     autoIndent: true
     backUpBeforeSaving: true
     fontFamily: "Input Mono Narrow"
-    fontSize: 11
+    fontSize: 12
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
@@ -57,7 +58,9 @@
     env: "NODE_ENV=test"
   nvatom:
     directory: "/Users/shawnrodriguez/Desktop/example"
-  "one-dark-ui": {}
+  "one-dark-ui":
+    layoutMode: "Compact"
+    tabSizing: "Minimum"
   pigments:
     supportedFiletypes: [
       "css"
@@ -66,6 +69,31 @@
       "scss"
       "html"
     ]
+  "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        black: "#003540"
+        blue: "#278bd2"
+        cyan: "#2ba198"
+        green: "#849901"
+        magenta: "#d33682"
+        red: "#dc312f"
+        white: "#eee8d5"
+        yellow: "#b58900"
+      zBright:
+        brightBlack: "#002834"
+        brightBlue: "#839496"
+        brightCyan: "#93a1a1"
+        brightGreen: "#586e75"
+        brightMagenta: "#6c6fc7"
+        brightRed: "#cb4c15"
+        brightWhite: "#fef7e3"
+        brightYellow: "#657b83"
+    core: {}
+    customTexts: {}
+    style:
+      theme: "solarized-dark"
+    toggles: {}
   react:
     enabledForAllJavascriptFiles: true
   rspec: {}

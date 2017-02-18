@@ -79,3 +79,6 @@
   'ctrl-k': 'advanced-open-file:move-cursor-up'
   'ctrl-j': 'advanced-open-file:move-cursor-down'
   'ctrl-v': 'pane:split-right'
+
+'.platform-darwin .platformio-ide-terminal .terminal':
+  'space x': 'platformio-ide-terminal:toggle'
