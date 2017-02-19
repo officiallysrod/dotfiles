@@ -4,6 +4,8 @@
     autoBuildTagsWhenActive: true
     buildTimeout: 60000
     cmdArgs: "--exclude=aux --exclude=config --exclude=data  --exclude=log4r --exclude=node_modules --exclude=.git"
+  "autocomplete-ctags":
+    maximumTagFileSize: 100
   "autocomplete-plus":
     useAlternateScoring: false
     useCoreMovementCommands: false
@@ -15,7 +17,6 @@
       "vim-mode"
       "vim-surround"
       "ex-mode"
-      "symbols-view"
     ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
