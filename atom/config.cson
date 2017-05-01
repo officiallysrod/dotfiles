@@ -16,20 +16,16 @@
       "metrics"
       "vim-mode"
       "vim-surround"
-      "ex-mode"
+      "git-plus"
     ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
-    themes: [
-      "one-dark-ui"
-      "solarized-dark-syntax"
-    ]
-    useCustomTitleBar: true
+    titleBar: "custom"
   editor:
     autoIndent: true
     backUpBeforeSaving: true
     fontFamily: "Input Mono Narrow"
-    fontSize: 12
+    fontSize: 9
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
@@ -42,16 +38,22 @@
   "fuzzy-finder": {}
   "git-diff":
     showIconsInEditorGutter: true
+  "git-plus":
+    experimental:
+      stageFilesBeta: false
+    general: {}
   "highlight-line":
     enableSelectionBorder: true
   linter:
-    errorPanelHeight: 71
-    lintOnFlyInterval: 750
-    showErrorPanel: false
+    lintOnChangeInterval: 1000
+  "linter-eslint": {}
   "linter-rubocop":
+    command: "bundle exec rubocop"
     disableWhenNoConfigFile: true
   "linter-sass-lint":
     configFile: ".scss-lint.yml"
+  "linter-ui-default":
+    tooltipFollows: "Keyboard"
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true
@@ -73,27 +75,27 @@
   "platformio-ide-terminal":
     ansiColors:
       normal:
-        black: "#003540"
-        blue: "#278bd2"
-        cyan: "#2ba198"
-        green: "#849901"
-        magenta: "#d33682"
-        red: "#dc312f"
-        white: "#eee8d5"
-        yellow: "#b58900"
+        black: "#282c34"
+        blue: "#72bef2"
+        cyan: "#64c2cd"
+        green: "#a8cc8c"
+        magenta: "#d291e4"
+        red: "#e88388"
+        white: "#b9c0cb"
+        yellow: "#dbaa79"
       zBright:
-        brightBlack: "#002834"
-        brightBlue: "#839496"
-        brightCyan: "#93a1a1"
-        brightGreen: "#586e75"
-        brightMagenta: "#6c6fc7"
+        brightBlack: "#6f7783"
+        brightBlue: "#72bef2"
+        brightCyan: "#64c2cd"
+        brightGreen: "#a8cc8c"
+        brightMagenta: "#d291e4"
         brightRed: "#cb4c15"
         brightWhite: "#fef7e3"
         brightYellow: "#657b83"
     core: {}
     customTexts: {}
     style:
-      theme: "solarized-dark"
+      theme: "one-dark"
     toggles: {}
   react:
     enabledForAllJavascriptFiles: true
@@ -106,6 +108,7 @@
     testFramework: "minitest"
   "status-bar": {}
   tabs:
+    alwaysShowTabBar: false
     enableVcsColoring: true
   "tree-view":
     alwaysOpenExisting: true
@@ -121,7 +124,6 @@
     hideStatusBarOnMaximizePane: false
     highlightSearch: true
     ignoreCaseForSearch: true
-    showCursorInVisualMode: false
     showHoverSearchCounter: true
     smoothScrollOnFullScrollMotion: true
     statusBarModeStringStyle: "long"

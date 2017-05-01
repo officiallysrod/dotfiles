@@ -8,34 +8,38 @@
  * http://www.lesscss.org
  */
 
-.tree-view {
-  font-family: "Input Mono Narrow"
-}
+// .tree-view {
+//   font-family: "Input Mono Narrow";
+// }
 
 // style the background and foreground colors on the atom-text-editor-element
 // itself
 atom-text-editor {
+}
 
+::-webkit-scrollbar {
+    display: none;
 }
 
 // To style other content in the text editor's shadow DOM, use the ::shadow
 // expression
 atom-text-editor::shadow .cursor {
-
 }
 
-atom-pane.active {
-  border: 3px solid #FAFAFA;
+atom-text-editor.editor .wrap-guide {
+  width: 8px;
+  background-color: rgba(100, 100, 100, 0.3);
 }
-// atom-text-editor::shadow .linter-highlight.warning:not(.line-number), .linter-highlight.warning:not(.line-number) {
+
+atom-pane.pane.active {
+  border: 1px solid #FAFAFA;
+}
+
 atom-text-editor.editor .linter-highlight.syntax--warning:not(.line-number), .linter-highlight.warning:not(.line-number) {
   background-color: yellow;
   color: black;
 }
-// atom-pane:not(.active){
-//   opacity: 0.9;
-// }
 
 .platformio-ide-terminal .xterm {
-  background-color: #002B36;
+  // background-color: #002B36;
 }
