@@ -16,7 +16,9 @@
       "metrics"
       "vim-mode"
       "vim-surround"
-      "git-plus"
+      "pane-split-moves-tab"
+      "pane-manager"
+      "move-panes"
     ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
@@ -24,8 +26,8 @@
   editor:
     autoIndent: true
     backUpBeforeSaving: true
-    fontFamily: "Input Mono Narrow"
-    fontSize: 9
+    fontFamily: "InputMonoNarrow-Light"
+    fontSize: 10
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
@@ -62,7 +64,6 @@
   nvatom:
     directory: "/Users/shawnrodriguez/Desktop/example"
   "one-dark-ui":
-    layoutMode: "Compact"
     tabSizing: "Minimum"
   pigments:
     supportedFiletypes: [
@@ -93,7 +94,8 @@
         brightWhite: "#fef7e3"
         brightYellow: "#657b83"
     core: {}
-    customTexts: {}
+    customTexts:
+      customText1: "bin/rspec $D/$F:$L"
     style:
       theme: "one-dark"
     toggles: {}
@@ -108,7 +110,7 @@
     testFramework: "minitest"
   "status-bar": {}
   tabs:
-    alwaysShowTabBar: false
+    alwaysShowTabBar: true
     enableVcsColoring: true
   "tree-view":
     alwaysOpenExisting: true
@@ -121,13 +123,18 @@
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
     clearHighlightSearchOnResetNormalMode: true
     clearMultipleCursorsOnEscapeInsertMode: true
+    findCharsMax: 2
     hideStatusBarOnMaximizePane: false
     highlightSearch: true
     ignoreCaseForSearch: true
+    keymapPToPutWithAutoIndent: true
+    keymapUnderscoreToReplaceWithRegister: true
     showHoverSearchCounter: true
     smoothScrollOnFullScrollMotion: true
     statusBarModeStringStyle: "long"
+    stayOnDelete: false
     stayOnTransformString: true
+    stayOnYank: true
     useClipboardAsDefaultRegister: true
   welcome:
     showOnStartup: false
