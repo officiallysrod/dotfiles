@@ -20,14 +20,24 @@
       "pane-manager"
       "move-panes"
     ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "node_modules"
+    ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
     titleBar: "custom"
   editor:
     autoIndent: true
     backUpBeforeSaving: true
-    fontFamily: "InputMonoNarrow-Light"
-    fontSize: 10
+    fontFamily: "LeagueMono-UltraLight"
+    fontSize: 11
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
@@ -55,6 +65,7 @@
   "linter-sass-lint":
     configFile: ".scss-lint.yml"
   "linter-ui-default":
+    panelHeight: 176
     tooltipFollows: "Keyboard"
   "markdown-preview":
     breakOnSingleNewline: true
@@ -145,6 +156,7 @@
     preferredLineLength: 100
 ".coffee.jsx.source":
   editor:
+    autoIndent: false
     preferredLineLength: 100
     showIndentGuide: true
 ".diff.source":
@@ -168,6 +180,8 @@
     preferredLineLength: 100
 ".js.jsx.source":
   editor:
+    autoIndent: true
+    autoIndentOnPaste: true
     preferredLineLength: 100
     showIndentGuide: true
 ".js.rails.source source.jquery.js":
